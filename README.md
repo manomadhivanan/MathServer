@@ -30,10 +30,8 @@ Create a HTML file to implement form based input and output.
 Publish the website in the given URL.
 
 ## PROGRAM :
-'''
-
-math.html
-
+### MATH HTML
+```<html>
 <head>
    
     <meta charset='utf-8'>
@@ -61,7 +59,7 @@ math.html
             width: 550px;
             min-height: 300px;
             font-size: 20px;
-            background-color: rgb(217, 139, 5);
+            background-color: rgb(62, 255, 3);
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
@@ -91,7 +89,7 @@ math.html
 <body>
     <div class="edge">
         <div class="box">
-             <h1>MANO (212221040100)</h1>
+             <h1>MANO M(212221040100)</h1>
             <h1>Surface Area of Cylinder </h1>
 
             <form method="POST">
@@ -112,8 +110,8 @@ math.html
     </div>
 </body>
 </html>
-
-views.py
+```
+VIEWS.PY
 
 from django.shortcuts import render
 def cylinarea(request):
