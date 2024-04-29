@@ -31,8 +31,7 @@ Publish the website in the given URL.
 
 ## PROGRAM :
 ### MATH HTML
-```<html>
-<head>
+```<head>
    
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -59,7 +58,7 @@ Publish the website in the given URL.
             width: 550px;
             min-height: 300px;
             font-size: 20px;
-            background-color: rgb(62, 255, 3);
+            background-color: rgb(217, 139, 5);
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
@@ -89,7 +88,7 @@ Publish the website in the given URL.
 <body>
     <div class="edge">
         <div class="box">
-             <h1>MANO M(212221040100)</h1>
+             <h1>MANO (212221040100)</h1>
             <h1>Surface Area of Cylinder </h1>
 
             <form method="POST">
@@ -111,8 +110,8 @@ Publish the website in the given URL.
 </body>
 </html>
 ```
-VIEWS.PY
-
+### VIEWS.PY
+```
 from django.shortcuts import render
 def cylinarea(request):
     context = {}
@@ -133,10 +132,10 @@ def cylinarea(request):
         print('Area =', area)
     
     return render(request, 'mathapp/math.html',context)
-
-    urls.py
-
-    from django.contrib import admin
+```
+### URLS.PY
+```
+from django.contrib import admin
 from django.urls import path
 from mathapp import views
 urlpatterns = [
@@ -144,6 +143,7 @@ urlpatterns = [
     path('surfaceareaofcylinder/',views.cylinarea,name="surfaceareaofcylinder"),
     path('',views.cylinarea,name="surfaceareaofcylinder")
 ]
+```
 '''
 
 ## SERVER SIDE PROCESSING:
